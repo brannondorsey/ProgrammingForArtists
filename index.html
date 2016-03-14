@@ -10,6 +10,11 @@
         src: url("media/Aileron-Regular.otf") format("opentype");
       }
 
+       @font-face {
+        font-family: AileronLight;
+        src: url("media/Aileron-Light.otf") format("opentype");
+      }
+
       body {
         font-family: AileronRegular;
         color: #ED225D;
@@ -18,9 +23,25 @@
         text-align: center;
         font-size: 18pt;
       } 
+
+      p {
+        font-family: AileronLight;
+        line-height: 140%;
+      }
+
+      .content {
+        margin-top: 3px;
+        font-size: 14pt;
+        text-align: left;
+        width: 60%;
+        margin: auto;
+      }
+
       ul{
         list-style-type: none;
+        text-align: center;
       }
+
       li {
         margin-top: 10px;
       }
@@ -33,19 +54,108 @@
         color: #555
       }
 
+      img {
+        display: block;
+        width: 80%;
+        margin: 50px auto;
+
+        text-align: center;
+      }
+
+      iframe {
+        width: 100%;
+        height: 500px;
+        margin-bottom: 20px;
+        pointer-events: none;
+      }
+
+      .clickable {
+        cursor: pointer;
+      }
+
+      .left-aligned-ul {
+        list-style-type: square;
+        text-align: left;
+      }
+
     </style>
+    <script type="text/javascript">
+      function visitExample(elem) {
+        window.location.href = elem.firstChild.src
+      }
+    </script>
   </head>
   <body>
     <h1>P5.js Albers Color Theory Examples</h1> 
     <p>Materials for an introduction to P5.js lecture at the Art Institute of Chicago.
-    <br>By Brannon Dorsey</p>
-    <ul>
-      <li><a href="sketch-1/index.html">Sketch 1</a></li>
-      <li><a href="sketch-2/index.html">Sketch 2</a></li>
-      <li><a href="sketch-3/index.html">Sketch 3</a></li>
-      <li><a href="sketch-4/index.html">Sketch 4</a></li>
-      <li><a href="sketch-5/index.html">Sketch 5</a></li>
-      <li><a href="sketch-6/index.html">Sketch 6 (Advanced)</a></li>
-    </ul>
+    <br>By <a href="http://brannondorsey.com">Brannon Dorsey</a></p>
+    <div class="content">
+      
+      <h2>Intro</h2>
+
+      <p>Programming, it turns out, is hard. The fundamental rules are typically simple and clear. But programs built on top of these rules tend to become complex [...] A computer is a machine built to act as a host for these immaterial machines [programs]. Computers themselves can do only stupidly straightforward things. The reason they are so useful is that they do these things at an incredibly high speed. A program can ingeniously combine an enormous number of these simple actions in order to do very complicated things <br><br> -- from Marijn Haverbeke's introduction to Eloquent JavaScript, a Modern Introduction to Programming (2015)
+      </p>
+
+      <h2>
+        Why P5.js?
+      </h2>
+      <p>
+        <a href="http://p5js.org/">P5.js</a> is has evolved out of <a href="https://processing.org/">Processing</a>, perhaps the most important toolkit geared towards teaching artist to program. For nearly 15 years Processing "<a href="https://processing.org/overview/">has promoted software literacy, particularly within the visual arts, and visual literacy within technology"</a>. During that time artists from all over the world have been using it to make <a href="https://processing.org/exhibition/">brilliant new works of interactive and generative art.</a>
+        </p>
+        <p>
+        During the summer of 2014, <a href="http://lauren-mccarthy.com/">Lauren McCarthy</a> and a community of enthused artists and programmers began working on P5.js, a version of Processing that was written in JavaScript, the language of the web. JavaScript as a language has undergone a recent renaissance and has strongly positioned itself as one of todays most popular
+        and flexible languages. Using P5.js also means that we can host and share the sketches that we make on the web.
+        </p>
+
+        <img src="media/javascript.jpg">
+
+      <h2>Getting Started</h2>
+
+        <p>Let's begin by downloading the P5.js Editor from <a href="http://p5js.org/download/">this downloads page.</a></p>
+        <img src="media/p5editor.png">
+
+        <p>This editor will allow you to easily write and run your sketches. While this editor makes getting up and running with P5.js very easy, you can also write P5.js in any text-editor of your choice.</p>
+        <p>
+          For a great intro to P5.js, hop on over to the <a href="http://p5js.org/get-started/">Get Started</a> section on the P5.js website.
+        </p>
+
+        <p>Before we move on, I want to stress the use two resources above all else when learning to use P5.js. <a href="http://p5js.org/reference/">This reference page</a> and <a href="http://p5js.org/examples/">these examples</a> will be invaluable to you as you make your way down the wonderful journey that is learning to PROGRAM! Not only is it advised, but expected that you will rely on the reference throughout the rest of your programming days, not only while you are learning. Even the best and most experienced of programmers generally have trouble writing code without an internet connection they can rely on to look stuff up.
+        </p>
+
+      <h2>Examples</h2>
+
+      <p>I've made a few example sketches inspired by <a href="https://en.wikipedia.org/wiki/Josef_Albers">Josef Alber's</a> work. Click on one to view it in fullscreen. Descriptions of each sketch lies below.</p>
+
+
+      <div class="clickable" onclick="visitExample(this)"><iframe src="sketch-1/index.html" frameborder="0"></iframe></div>
+      <div class="clickable" onclick="visitExample(this)"><iframe src="sketch-2/index.html" frameborder="0"></iframe></div>
+      <div class="clickable" onclick="visitExample(this)"><iframe src="sketch-3/index.html" frameborder="0"></iframe></div>
+      <div class="clickable" onclick="visitExample(this)"><iframe src="sketch-4/index.html" frameborder="0"></iframe></div>
+      <div class="clickable" onclick="visitExample(this)"><iframe src="sketch-5/index.html" frameborder="0"></iframe></div>
+      <div class="clickable" onclick="visitExample(this)"><iframe src="sketch-6/index.html" frameborder="0"></iframe></div>
+
+      <ol>
+        <li>Demonstrates basic drawing of shapes to the screen.</li>
+        <li>Adds dynamic behavior to the sketch by controlling the size of rectangles by a sine wave function.</li>
+        <li>Introduces a hue shift behavior to the previous sketch.</li>
+        <li>Displays the relationship created by using sine waves at different frequencies to control the y-position of rectangles. </li>
+        <li>Illustrates the usage of Blend Modes in P5.js.</li>
+        <li>This advanced example uses a frame-differencing algorithm processed on input from an attached webcam to detect how much motion is present in the frame and use it to control the rotation speed of the shapes.</li>
+      </ol>
+
+        <h2>Resources</h2>
+
+        <p>Below are a list of resources that will be invaluable to you as you learn to program.</p>
+        <ul class="left-aligned-ul">
+          <li><a href="https://github.com/olab-io/Meetup.js">Weekly JavaScript Meetup Materials</a>: A few years ago I lead a weekly meetup to help students learn JavaScript. Click on the "basic" folder link to for a JavaScript intro that goes over most of the basics of JavaScript.</li>
+          <li><a href="http://netart.rocks/jsbasics">Nick's JavaScript Basix:</a> Nick Briz (teaches at SAIC in the FVNMA dept.) has some amazing online course materials. His JavaScript intro is one of the best.</li>
+          <li><a href="https://forum.processing.org/two/categories/p5-js">The Processing Forum:</a> Processing has a wonderful and thriving community that are always happy to help answer questions. I've linked to the P5.js section of the forum.</li>
+          <li><a href="http://stackoverflow.com/">Stack Overflow</a>: This is by far the most active programming forum on the web. Chances are if you are having a problem someone else already has asked a question (and received an answer) about it.</li>
+          <li><a href="mailto:brannon@brannondorsey.com">Me</a>: Feel free to shoot me an email :). I'll do my best to get back to you.</li>
+        </ul>
+
+        <h2>Copyleft</h2>
+        <p>All original materials featured on this site are released to the public domain. Share, use, and remix as you please. <3 Brannon.</p>
+    </div>
   </body>
 </html>
