@@ -18,11 +18,11 @@
       body {
         font-family: AileronRegular;
         color: #ED225D;
-        padding: 0; 
+        padding: 0;
         margin: 0;
         text-align: center;
         font-size: 18pt;
-      } 
+      }
 
       p {
         font-family: AileronLight;
@@ -45,7 +45,7 @@
       li {
         margin-top: 10px;
       }
-      
+
       a {
         color: #666
       }
@@ -86,11 +86,11 @@
     </script>
   </head>
   <body>
-    <h1>P5.js Albers Color Theory Examples</h1> 
-    <p>Materials for an introduction to P5.js lecture at the Art Institute of Chicago.
+    <h1>Programming For Artists</h1>
+    <p>Materials for an introduction to programming for artists (w/ <a href="https://p5js.org/">P5.js</a>)<br> lecture at the Art Institute of Chicago.</p>
     <br>By <a href="http://brannondorsey.com">Brannon Dorsey</a></p>
     <div class="content">
-      
+
       <h2>Intro</h2>
 
       <p>Programming, it turns out, is hard. The fundamental rules are typically simple and clear. But programs built on top of these rules tend to become complex [...] A computer is a machine built to act as a host for these immaterial machines [programs]. Computers themselves can do only stupidly straightforward things. The reason they are so useful is that they do these things at an incredibly high speed. A program can ingeniously combine an enormous number of these simple actions in order to do very complicated things <br><br> -- from Marijn Haverbeke's introduction to Eloquent JavaScript, a Modern Introduction to Programming (2015)
@@ -103,7 +103,7 @@
         <a href="http://p5js.org/">P5.js</a> is has evolved out of <a href="https://processing.org/">Processing</a>, perhaps the most important toolkit geared towards teaching artist to program. For nearly 15 years Processing "<a href="https://processing.org/overview/">has promoted software literacy, particularly within the visual arts, and visual literacy within technology"</a>. During that time artists from all over the world have been using it to make <a href="https://processing.org/exhibition/">brilliant new works of interactive and generative art.</a>
         </p>
         <p>
-        During the summer of 2014, <a href="http://lauren-mccarthy.com/">Lauren McCarthy</a> and a community of enthused artists and programmers began working on P5.js, a version of Processing that was written in JavaScript, the language of the web. JavaScript as a language has undergone a recent renaissance and has strongly positioned itself as one of todays most popular
+        During the summer of 2014, <a href="http://lauren-mccarthy.com/">Lauren McCarthy</a> and a community of enthused artists and programmers began working on P5.js, a version of Processing that was written in JavaScript, the scripting language of the web. JavaScript as a language has undergone a recent renaissance and has strongly positioned itself as one of todays most popular
         and flexible languages. Using P5.js also means that we can host and share the sketches that we make on the web.
         </p>
 
@@ -119,20 +119,29 @@
           For a great intro to P5.js, hop on over to the <a href="http://p5js.org/get-started/">Get Started</a> section on the P5.js website.
         </p>
 
-        <p>Before we move on, I want to stress the use two resources above all else when learning to use P5.js. <a href="http://p5js.org/reference/">This reference page</a> and <a href="http://p5js.org/examples/">these examples</a> will be invaluable to you as you make your way down the wonderful journey that is learning to PROGRAM! Not only is it advised, but expected that you will rely on the reference throughout the rest of your programming days, not only while you are learning. Even the best and most experienced of programmers generally have trouble writing code without an internet connection they can rely on to look stuff up.
+        <p>Before we move on, I want to stress the use two resources above all else when learning to use P5.js. <a href="http://p5js.org/reference/">This reference page</a> and <a href="http://p5js.org/examples/">these examples</a> will be invaluable to you as find your way on the wonderful journey that is learning to PROGRAM! Not only is it advised, but expected that you will rely on the reference throughout the rest of your programming days, not only while you are learning. Even the best and most experienced of programmers generally have trouble writing code without an internet connection they can rely on to look stuff up.
         </p>
 
-      <h2>Examples</h2>
+        <h2>Examples</h2>
 
-      <p>I've made a few example sketches inspired by <a href="https://en.wikipedia.org/wiki/Josef_Albers">Josef Alber's</a> work. Click on one to view it in fullscreen. Descriptions of each sketch lies below.</p>
+        <p>Below are the examples from last year's lecture. They are inspired by the work of artist<a href="https://en.wikipedia.org/wiki/Josef_Albers">Josef Alber</a>. Click on one to view it in fullscreen. Descriptions of each sketch lies below.</p>
+
+        <div class="clickable" onclick="visitExample(this)"><iframe src="sketch-1/index.html" frameborder="0"></iframe></div>
+        <div class="clickable" onclick="visitExample(this)"><iframe src="sketch-2/index.html" frameborder="0"></iframe></div>
+        <div class="clickable" onclick="visitExample(this)"><iframe src="sketch-3/index.html" frameborder="0"></iframe></div>
+        <div class="clickable" onclick="visitExample(this)"><iframe src="sketch-4/index.html" frameborder="0"></iframe></div>
+
+      <h2>Last Year's Examples</h2>
+
+      <p>I've also included the example sketches from last year's lecture. They are inspired by the work of artist<a href="https://en.wikipedia.org/wiki/Josef_Albers">Josef Albers</a>. Click on one to view it in fullscreen. Descriptions of each sketch lies below.</p>
 
 
-      <div class="clickable" onclick="visitExample(this)"><iframe src="sketch-1/index.html" frameborder="0"></iframe></div>
-      <div class="clickable" onclick="visitExample(this)"><iframe src="sketch-2/index.html" frameborder="0"></iframe></div>
-      <div class="clickable" onclick="visitExample(this)"><iframe src="sketch-3/index.html" frameborder="0"></iframe></div>
-      <div class="clickable" onclick="visitExample(this)"><iframe src="sketch-4/index.html" frameborder="0"></iframe></div>
-      <div class="clickable" onclick="visitExample(this)"><iframe src="sketch-5/index.html" frameborder="0"></iframe></div>
-      <div class="clickable" onclick="visitExample(this)"><iframe src="sketch-6/index.html" frameborder="0"></iframe></div>
+      <div class="clickable" onclick="visitExample(this)"><iframe src="albers-sketch-1/index.html" frameborder="0"></iframe></div>
+      <div class="clickable" onclick="visitExample(this)"><iframe src="albers-sketch-2/index.html" frameborder="0"></iframe></div>
+      <div class="clickable" onclick="visitExample(this)"><iframe src="albers-sketch-3/index.html" frameborder="0"></iframe></div>
+      <div class="clickable" onclick="visitExample(this)"><iframe src="albers-sketch-4/index.html" frameborder="0"></iframe></div>
+      <div class="clickable" onclick="visitExample(this)"><iframe src="albers-sketch-5/index.html" frameborder="0"></iframe></div>
+      <div class="clickable" onclick="visitExample(this)"><iframe src="albers-sketch-6/index.html" frameborder="0"></iframe></div>
 
       <ol>
         <li>Demonstrates basic drawing of shapes to the screen.</li>
