@@ -1,3 +1,4 @@
+// the setup function runs only once when the sketch loads.
 function setup() {
 	// we begin by creating our "artist canvas"
 	// here we set the width and height to be the size
@@ -5,6 +6,8 @@ function setup() {
 	createCanvas(windowWidth, windowHeight) // parameters: width, height
 }
 
+// the draw function runs once every frame. The framerate is 60fps by default,
+// but that can be changed by calling the frameRate() function.
 function draw() {
 
 	background(255, 0, 127) // parameters: red, green, blue (0 - 255)
@@ -79,4 +82,12 @@ function draw() {
 	// 	ellipse(x, y, size, size) // parameters: x, y, width, height
 	// }
 
+}
+
+// called when the window is resized
+function windowResized() {
+  // here we resize the canvas by the new window width and height
+  // to assure that our canvas is always "fullscreen".
+  resizeCanvas(windowWidth, windowHeight)
+	background(255, 0, 127)
 }

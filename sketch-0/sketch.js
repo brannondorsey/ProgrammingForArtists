@@ -1,5 +1,4 @@
-// the setup function runs only once when the sketch loads. Put initialization
-// code in here.
+// the setup function runs only once when the sketch loads.
 function setup() {
 	// create a canvas to draw to. Here we make it the size of the entire browser
 	// window.
@@ -8,8 +7,7 @@ function setup() {
 	background(127, 127, 127) // parameters: red, green, blue (values 0 - 255)
 }
 
-// the draw function runs once every frame. The framerate is 60fps by default,
-// but that can be changed by calling the frameRate() function.
+// the draw function runs once every frame. The framerate is 60fps by default.
 function draw() {
 
 	// // comments are great for little notes to yourself, but they also

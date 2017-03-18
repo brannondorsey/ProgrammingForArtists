@@ -1,3 +1,4 @@
+// the setup function runs only once when the sketch loads.
 function setup() {
 	// we begin by creating our "artist canvas"
 	// here we set the width and height to be the size
@@ -6,6 +7,8 @@ function setup() {
 	background(255, 0, 127) // parameters: red, green, blue (0 - 255)
 }
 
+// the draw function runs once every frame. The framerate is 60fps by default,
+// but that can be changed by calling the frameRate() function.
 function draw() {
 
 	// set the drawing color
