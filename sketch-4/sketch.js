@@ -66,22 +66,6 @@ function draw() {
 	y = map(Math.sin((Date.now() / 1000) + radians(36 * 9)), -1.0, 1.0, height * 0.25, height * 0.75)
 	ellipse(x, y, size, size) // parameters: x, y, width, height
 
-	// here is a more advanced way to do the same thing using a "for loop". This
-	// allows us to get the same functionality without having to write out the
-	// code for each circle. It also allows us to better generalize our code and
-	// easily increase our number of circles if we choose to.
-
-	// numCircles = 10
-	// size = (width / numCircles) * 0.66
-	// step = width / (numCircles + 1)
-	// x = 0
-	// for (var i = 0; i < numCircles; i++) {
-	// 	x += step
-	// 	y = map(Math.sin((Date.now() / 1000) + radians((360 / numCircles) * i)),
-	// 					-1.0, 1.0, height * 0.25, height * 0.75)
-	// 	ellipse(x, y, size, size) // parameters: x, y, width, height
-	// }
-
 }
 
 // called when the window is resized

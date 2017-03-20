@@ -41,7 +41,5 @@ function draw() {
 // drawing triangles in P5.js is a little bit cumbersome, so I've created a
 // helper function to make it a bit easier
 function drawTriangle(x, y, size) {
-	triangle(x, y - size / 2,
-		       x + size / 2, y + size / 2,
-				   x - size / 2, y + size / 2)
+	triangle(x, y - size / 2, x + size / 2, y + size / 2, x - size / 2, y + size / 2)
 }

@@ -2,9 +2,9 @@ var color1;
 var color2;
 
 function setup() {
-	
+
 	createCanvas(windowWidth, windowHeight);
-	
+
 	color1 = color(0, 200, 80); // light green
 	color2 = color(0, 160, 60); // darker green
 }
@@ -30,20 +30,13 @@ function draw() {
 	var squareSize = 150;
 
 	// draw the left foreground rectangle
-	
+
 	// here we have written each of the four required parameters
 	// on a new line for readibility, although this isn't neccessary
-	rect(windowWidth * 0.25 - squareSize * 0.5, // x
-		 windowHeight * 0.5 - squareSize * 0.5, // y
-		 squareSize, // width
-		 squareSize); // height
-
+	rect(windowWidth * 0.25 - squareSize * 0.5, windowHeight * 0.5 - squareSize * 0.5, squareSize, squareSize); 
 	// draw the right foreground rectangle
 	fill(color1);
-	rect(windowWidth * 0.75 - squareSize * 0.5, 
-		 windowHeight * 0.5 - squareSize * 0.5, 
-		 squareSize, 
-		 squareSize);
+	rect(windowWidth * 0.75 - squareSize * 0.5, windowHeight * 0.5 - squareSize * 0.5, squareSize, squareSize);
 }
 
 // called when the window is resized
